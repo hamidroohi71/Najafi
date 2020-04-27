@@ -1,0 +1,805 @@
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    
+    width: 100%;
+    float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+    
+    max-width: 100%;
+}
+
+body {
+    
+    margin: 0;
+}
+
+header {
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.small-header {display: block;}
+.big-header {display: none;}
+
+.header-img {
+    
+    width: 80%;
+    padding: 5px 50px;
+    float: left;
+    
+  
+}
+
+#header-img {
+    
+    max-width: 100%;
+        
+}
+
+.header-menu {
+    
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px; 
+}
+
+.menu-btn {
+    
+    background: black;
+    border-radius: 50%;
+    width: 20px;
+    height:20px;
+
+}
+
+.small-nav {
+    
+    display: none;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    top: 80px;
+    padding-left: 30px;
+}
+
+.small-menu-link {
+    
+    font-family: verdana;
+    font-size: 13px;
+    padding: 10px;
+    color: dimgray;
+    text-decoration: none;
+
+}
+
+.big-header {
+    
+    height: 60px;
+    padding-top: 10px;
+ 
+}
+
+    
+}
+
+.logo-link {
+    
+    float: left;
+    
+    
+}
+
+.big-header-logo {
+    
+    float: left;
+    overflow: hidden;
+    display: block;
+    width: 120px;
+    margin-left: 80px;
+     
+}
+
+.big-menu {
+    
+    position: absolute;
+    float: right;
+    right: 10px;
+    padding-top: 10px;
+    
+    
+}
+
+.big-menu-link {
+    
+    font-family: verdana;
+    font-size: 13px;
+    padding: 10px;
+    color: dimgray;
+    text-decoration: none;
+
+}
+
+.big-menu-link:hover {
+    
+    cursor: pointer;
+    color: #cc6600;
+}
+
+.big-menu-link:active {
+    
+    cursor: pointer;
+    color: #cc6600;
+}
+
+
+.social-networks {
+    
+    
+    float: left;
+    width: 5%;
+    height: 400px;
+    display: none;
+        
+}
+
+.social-networks-menu {
+    
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.social-networks-link {
+    
+    
+    display: block;
+    margin: 10px 0 80px 0;
+    transform: rotate(-90deg);
+    font-family: verdana;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+.social-networks-link:hover {
+    
+    color: #cc6600;
+    cursor: pointer;
+}
+
+.slider {
+    
+    float: left;
+    width: 100%;
+/*    position: relative;*/
+    
+}
+
+.myslides {
+    
+    display: none;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+
+}
+
+
+#slide-1 {
+    
+    background-image: url(architectural-visualization-villa-project.jpg);
+    display: block;
+    
+}
+
+#slide-2 {
+    
+    background-image: url(architectural-visualization-dazzling-design.jpg);
+    
+    
+}
+
+#slide-3 {
+    
+    background-image: url(architectural-visualization-norvegian-chucrh-1920.jpg);
+    padding-top: 250px;
+    
+    
+}
+
+.number-text {
+    
+    color: black;
+    font-family: verdana;
+    font-size: 14px;
+    margin-bottom: 20px;
+    
+}
+
+.slide-caption {
+    
+    color: black;
+    font-family: verdana;
+    font-size: 30px;
+    font-weight: bold;
+    left: 40px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    
+    
+}
+
+.slide-btn {
+    
+    color: white;
+    font-family: verdana;
+    font-size: 10px;
+    background-color: #cc6600;
+    padding: 10px 20px;
+    left: 40px;
+    border: none;
+    
+}
+
+.number-text-t2 {
+    
+    color: white;
+    font-family: verdana;
+    font-size: 14px;
+    margin-bottom: 20px;   
+    
+}
+
+.slide-caption-t2 {
+    
+    color: white;
+    font-family: verdana;
+    font-size: 30px;
+    font-weight: bold;
+    left: 40px;
+    margin-bottom: 20px;
+    
+}
+
+.slide-btn-t2 {
+    
+    color: white;
+    font-family: verdana;
+    font-size: 10px;
+    background-color: #cc6600;
+    padding: 10px 20px;
+    left: 40px;
+    border: none;
+    
+}
+
+.navigator {
+    
+    height: 80px;
+    padding-top: 25px;
+    display: none;
+    
+}
+
+.navigator-link {
+    
+    background: none;
+    font-family: verdana;
+    font-size: 10px;
+    border: none;
+}
+
+.navigator-link:hover {
+    
+    color: #cc6600;
+    cursor: pointer;
+}
+
+.blank {
+    
+    float: left;
+    width: 5%;
+    display: none;
+}
+
+
+[id*="services-"] {
+    
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+#services-1 {
+    
+    background-image: url(architectural-visualization-business-center-lobbey.jpg);
+    color: black; 
+}
+
+#services-2 {
+    
+    background-image: url(architectural-visualization-white-villa-exterior150738.jpg);
+    
+   
+}
+
+#services-3 {
+    
+    background-image: url(architectural-rendering-business-center-france.jpg);
+    
+}
+
+h3 {
+    
+    font-family: verdana;
+    font-size: 28px;
+}
+
+h4 {
+    
+    font-family: verdana;
+    font-size: 16px;
+    line-height: 25px;
+    
+}
+
+.services-btn {
+    
+    background: none;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F3E2A9;
+    font-family: verdana;
+    font-size: 12px;
+    color: white;
+}
+
+.services-btn:hover {
+    
+    background-color: lightgray;
+    color: black;
+}
+
+#services-1 button {
+    color: black;
+}
+
+h2 {
+    
+    font-family: verdana;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 35px;
+    padding: 15px;
+}
+#properties {
+    
+    padding: 30px 10px 10px;
+    margin-bottom: 0px;
+}
+
+.tablinks {
+    
+    background: none;
+    color: darkgray;
+    font-family: verdana;
+    font-size: 14px;
+    border: none;
+    font-weight: bold;
+    margin-right: 10px;
+    
+    
+}
+
+.tab button:hover {
+    
+    color: #F3E2A9;
+}
+
+.tab button .active {
+    
+    
+    border: none;
+    color: #cc6600;
+}
+
+.tabcontent {
+    
+    display: none;
+    font-family: verdana;
+    font-size: 16px;
+    line-height: 25px;
+    
+}
+
+.tab-img {
+    
+    height: 40px;
+    margin: 0;
+}
+
+#next {
+    display: block;
+}
+
+#prop-tab {
+    
+    max-width: 100%;
+    padding-bottom: 40px;
+}
+
+.tabcontent-items {
+    
+    display: block;
+}
+
+.tabcontent-items-item {
+    
+    margin-right: 20px;
+    
+}
+
+.tabcontent-items p{
+    
+    line-height: 20px;
+    font-size: 14px;
+}
+
+h5 {
+    
+    font-size: 20px;
+    margin-top: 0;
+    font-family: verdana;
+}
+
+.work-slides {
+    
+    display: none;
+}
+
+#work-slides-1 {
+    
+    display: block;
+}
+
+.clients-mob {
+    
+    justify-content: center;
+    background-color: black;
+    display: flex;
+    
+}
+
+.clients {
+    
+    display: none;
+}
+
+.client-img {
+    
+    margin: 20px;
+}
+
+footer {
+    
+    background-color: gainsboro;
+    padding: 50px 100px;
+}
+
+.footer-logo {
+    
+    width: 150px;
+}
+
+.adress {
+    
+    font-family: verdana;
+    font-size: 12px;
+}
+
+.copyright {
+    
+    font-size: 11px;
+    margin-top: 40px;
+}
+
+h6 {
+    
+    font-family: verdana;
+    font-size: 28px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.pages a {
+    
+    font-family: verdana;
+    font-size: 12px;
+    text-decoration: underline;
+    display: block;
+    margin: 10px 0px;
+}
+
+.contact a {
+    
+    font-family: verdana;
+    font-size: 16px;
+    text-decoration: underline;
+    display: block;
+    margin: 10px 0px;
+}
+
+
+
+
+/*special styles for services page*/
+
+.title-img {
+    
+    float: left;
+    width: 100%;
+    background-image: url(3d-rendering-services-forest-house35680.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+
+.title-content {
+    
+    font-family: verdana;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+    
+}
+
+.title-p-t1 {
+    
+    font-size: 13px;
+    line-height: 20px;
+    
+}
+
+.title-p-t2 {
+    
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0px 10px;
+    margin-top: 20;
+    margin-bottom: 0;
+}
+
+#introduction-title {
+    
+    padding: 0 20px 50px;
+    text-align: center;
+    font-family: verdana;
+}
+
+h1 {
+    
+    font-size: 25px;
+    
+}
+
+#introduction-step p {
+    
+    font-style: italic;
+    line-height: 30px;
+    font-size: 14px;
+    
+}
+
+.contact-estimate {
+    
+    background-color: black;
+    font-size: 20px;
+    color: #F1F1F1;
+    font-weight: bold;
+    height: 200px;
+    text-align: center;
+    font-family: verdana;
+    padding: 70px 20px;
+    
+}
+
+.contact-estimate p {
+    
+   margin: 0px;
+    
+}
+
+.services-introduction {
+    
+    padding: 0;
+}
+
+#interior {
+    
+    background-color: #F1F1F1;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#interior-content {
+    
+    padding:  20px 30px;
+    font-family: verdana;
+    
+}
+
+#interior-content p {
+    
+    line-height: 25px;
+    font-size: 14px;
+}
+
+#interior-content a {
+    
+    font-size: 12px;
+    color: #cc6600;
+    
+}
+
+
+/*for desktop*/
+@media only screen and (min-width: 768px) {
+
+    
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+    
+    .small-header {display: none;}
+    
+    .small-nav {display: none;}
+    
+    .big-header {display: block;}
+    
+    .social-networks {
+        display: block;
+    }
+    
+    .blank {
+        display: block;
+    }
+    
+    .navigator {
+        display: block;
+    }
+    
+    .slider {
+        width: 90%;
+    }
+    
+    .myslides {    
+        height: 500px;
+    }
+    
+    .slide-caption {font-size: 50px;}
+    .slide-caption-t2 {font-size: 50px;}
+    
+    .clients-mob {
+    
+        display: none;
+    
+    }
+    
+    .clients {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    padding: 80px; 
+    }
+    
+    #properties {    
+        padding: 30px;
+        margin-bottom: 60px;
+    }
+    
+    .tabcontent-items {    
+        display: flex;
+    }
+    
+    #prop-tab {
+        padding: 40px 80px;
+    }
+    
+/*style for services page*/
+    
+    .title-img {
+    
+        float: left;
+        width: 90%;
+        height: 500px;
+        margin-bottom: 60px;
+    }
+
+    .title-content {
+    
+        padding-top: 250px;
+    }
+
+    .title-p-t1 {
+    
+        font-size: 16px;
+        font-weight: bold;
+    
+    }
+
+    .title-p-t2 {
+    
+        font-size: 60px;
+        font-weight: bold;
+        padding: 0px 80px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    #introduction-title {
+    
+        padding: 0 100px 50px;
+        text-align: center;
+        font-family: verdana;
+    }
+    h1 {
+    font-size: 35px;
+    }
+    
+    .contact-estimate {
+    
+    font-size: 50px;
+    font-weight: bold;
+    height: 200px;
+    padding-top: 60px;
+    
+    }
+    
+    .services-introduction {
+    
+    padding: 110px 90px 0px;
+    }
+    
+}
+
+
